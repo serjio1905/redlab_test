@@ -322,6 +322,7 @@ p {
     color: #FFFFFF;
     padding: 2rem;
     height: 100%;
+    width: 100%;
     position: absolute;
     opacity: 0;
     cursor: default;
