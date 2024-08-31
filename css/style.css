@@ -180,7 +180,8 @@ p {
 }
 
 .header__burger--menu-phone {
-    margin-bottom: 1rrem;
+    color: #404040;
+    margin-bottom: 5rem;
     font-size: 1.6rem;
     font-weight: 600;
     overflow: hidden;
