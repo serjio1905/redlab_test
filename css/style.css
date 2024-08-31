@@ -206,6 +206,7 @@ p {
     align-items: center;
     justify-content: center;
     z-index: 7;
+    cursor: pointer;
 }
 
 .header__burger.active .header__burger--lines::after {
@@ -392,9 +393,6 @@ p {
         width: 100%;
         opacity: .7;
     }
-    .info__content--wrapper {
-        margin-top: -30rem;
-    }
     .header__contact {
         display: none;
     }
@@ -413,7 +411,8 @@ p {
         padding-right: .5rem;
     }
     .header__left {
-        margin-right: .5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
     .features__item {
         width: 90%;
@@ -436,6 +435,9 @@ p {
     }
     .header__burger.active .header__burger--menu {
         width: 70vw;
+    }
+    .header__left {
+        margin-right: .5rem;
     }
 }
 
