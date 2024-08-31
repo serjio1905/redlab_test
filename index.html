@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Serhii test task</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__left">
+            <div class="header__logo">FoodDeliver</div>
+            <div class="header__switch">
+                <button class="header__switch--item active" onclick="onSwitch(0)">Доставка</button>
+                <button class="header__switch--item" onclick="onSwitch(1)">Самовивіз</button>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <div class="header__menu--item">Заклади</div>
+            <div class="header__menu--item">Доставка і оплата</div>
+            <div class="header__menu--item">Акції</div>
+            <div class="header__menu--item">Про нас</div>
+        </nav>
+        <div class="header__contact">+380 67 451 99 57&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;24/7</div>
+
+        <button class="header__burger" onclick="switchMainMenu()">
+            <div class="header__burger--menu">
+                <div class="header__burger--menu-list">
+                    <div class="header__burger--menu-item"><h4>Заклади</h4></div>
+                    <div class="header__burger--menu-item"><h4>Доставка і оплата</h4></div>
+                    <div class="header__burger--menu-item"><h4>Акції</h4></div>
+                    <div class="header__burger--menu-item"><h4>Про нас</h4></div>
+                </div>
+                <div class="header__burger--menu-phone">+380 67 451 99 57&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;24/7</div>
+            </div>
+            <div class="header__burger--inner">
+                <div class="header__burger--lines"></div>
+            </div>
+        </button>
+    </header>
+
+    <main>
+
+        <div class="info">
+            <div class="info__img"></div>
+            <div class="info__content">
+                <div class="info__content--wrapper">
+                    <h1 class="info__content--title">Доставка готової їжі в Києві</h1>
+                    <p class="info__content--text">Ми пропонуємо доставку їжі прямо до ваших дверей. Насолоджуйтесь смачними стравами без необхідності готувати самостійно.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="features">
+            <div class="features__item">
+                <div class="features__item--wrapper">
+                    <div class="features__item--info">Наша доставка гарантує вам високу якість продуктів.  Кожна страва, яку ми готуємо, пройшла строгий контроль якості, щоб забезпечити вам найкращий смаковий досвід</div>
+                    <h4>Висока якість продукції</h4>
+                    <img src="./assets/images/Check.png"/>
+                </div>
+            </div>
+            <div class="features__item">
+                <div class="features__item--wrapper">
+                    <div class="features__item--info">Наша доставка гарантує вам високу якість продуктів.  Кожна страва, яку ми готуємо, пройшла строгий контроль якості, щоб забезпечити вам найкращий смаковий досвід</div>
+                    <h4>Різноманітність страв</h4>
+                    <img src="./assets/images/Bowl.png"/>
+                </div>
+            </div>
+            <div class="features__item">
+                <div class="features__item--wrapper">
+                    <div class="features__item--info">Наша доставка гарантує вам високу якість продуктів.  Кожна страва, яку ми готуємо, пройшла строгий контроль якості, щоб забезпечити вам найкращий смаковий досвід</div>
+                    <h4>Швидка доставка</h4>
+                    <img src="./assets/images/Roket 1.png"/>
+                </div>
+            </div>
+            <div class="features__item">
+                <div class="features__item--wrapper">
+                    <div class="features__item--info">Наша доставка гарантує вам високу якість продуктів.  Кожна страва, яку ми готуємо, пройшла строгий контроль якості, щоб забезпечити вам найкращий смаковий досвід</div>
+                    <h4>Працюємо цілодобово</h4>
+                    <img src="./assets/images/clock.png"/>
+                </div>
+            </div>
+        </div>
+    
+        <div class="order">
+            <div class="order--wrapper">
+                <div class="order__button">Замовити<br/>доставку</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../assets/fonts/TTTravels-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../assets/fonts/TTTravels-Bold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../assets/fonts/TTTravels-DemiBold.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../assets/fonts/TTTravels-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../assets/fonts/TTTravels-Medium.ttf');
+    font-weight: 400;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+  position: relative;
+  font-size: 10px;
+}
+
+body {
+    font-family: 'TT Travels';
+    position: relative;
+}
+
+h1 {
+    font-size: 7.6rem;
+    font-weight: 400;
+    line-height: 8.3rem;
+    color: #404040;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.1rem;
+    text-align: center;
+    color: #404040;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: #404040;  
+}
+
+.header {
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5.8rem;
+    padding-right: 3rem;
+    position: absolute;
+    width: 100%;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-family: Verdana;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.52rem;
+    text-align: left;
+    margin-right: 3rem;
+}
+
+.header__switch {
+    display: flex;
+    gap: 1rem;
+    border-radius: 4.8rem;
+    padding: 0.3rem;
+    background-color: #FFFFFF;
+}
+
+.header__switch--item {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    padding: 0.8rem 1.2rem;
+    border-radius: 3.4rem;
+    color: #636C81;
+    outline: none;
+    border: none;
+    transition: background-color .3s, color .3s;
+}
+
+.header__switch--item.active {
+    background-color: #5A30F0;
+    color: #FFFFFF;
+}
+
+.header__menu {
+    display: flex;
+    gap: 2rem;
+    flex: 2;
+    justify-content: center;
+}
+
+.header__menu--item {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: #596277;
+    letter-spacing: 0.02rem;
+    cursor: pointer;
+}
+
+.header__left {
+    display: flex;
+    flex: 1;
+}
+
+.header__contact {
+    color: #404040;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.9rem;
+    letter-spacing: 0.02rem;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+
+.header__burger--menu {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: width .3s;
+    box-shadow: -.2rem 0 .2rem -.1rem lightgray;
+    z-index: 5;
+}
+
+.header__burger--menu-list {
+    padding-top: 20rem;
+    flex: 1;
+}
+
+.header__burger--menu-item {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.9rem;
+    margin: 5rem 0;
+    cursor: pointer;
+}
+
+.header__burger--menu-phone {
+    margin-bottom: 1rrem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    overflow: hidden;
+    height: 2.5rem;
+}
+
+.header__burger.active .header__burger--menu {
+    width: 40vw;
+}
+
+.header__burger {
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+	margin-left: 2rem;
+}
+
+.header__burger--inner {
+    width:  3.5rem;
+    height: 3.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 7;
+}
+
+.header__burger.active .header__burger--lines::after {
+    transform: rotate(45deg);
+    top: -.1rem;
+}
+
+.header__burger.active .header__burger--lines::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header__burger--lines::before, .header__burger--lines::after {
+    height: .2rem;
+    width: 3rem;
+    background-color: #404040;
+}
+
+.header__burger--lines::before, .header__burger--lines::after {
+    content: " ";
+    position: relative;
+    display: block;
+    transition: all .4s;
+}
+
+.header__burger--lines::before {
+    top: -.5rem;
+}
+
+.header__burger--lines::after {
+    top: .3rem;
+}
+
+
+.info {
+    display: flex;
+    height: 100vh;
+}
+
+.info__img {
+    flex: 1;
+    background-image: url("../assets/images/logan.png");
+    background-size: cover;
+    background-position: bottom;
+    z-index: -10;
+}
+
+.info__content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__content--wrapper {
+    width: 40rem;
+    height: 38rem;
+}
+
+.info__content--text {
+    margin-top: 2rem;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 3rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.features__item {
+    display: block;
+    position: relative;
+    height: 32rem;
+    width: 30rem;
+    overflow: hidden;
+}
+
+.features__item--wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#eaebf1;
+    border-radius: 0.8rem;
+    position: absolute;
+    top: 8rem;
+    transition: top .5s;
+}
+
+
+.features__item.visible .features__item--wrapper {
+    top: 0;
+}
+
+.features__item img {
+    width: 19rem;
+    height: 19rem;
+
+}
+
+.features__item--info {
+    background-color: #5A30F0;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 2rem;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: default;
+    transition: opacity .3s;
+}
+
+.features__item:hover .features__item--info {
+    opacity: 1;
+}
+
+.order {
+    position: sticky;
+    bottom: 0;
+    height: 0;
+    width: 100vw;
+    overflow: visible;
+}
+
+.order--wrapper {
+    width: 30rem;
+    height: 25rem;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.order__button {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 1.8rem;
+    background-color: #5A30F0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2.3rem;
+    cursor: pointer;
+    position: absolute;
+    left: 5rem;
+    top: 4rem;
+    animation: rotating 30s linear infinite;
+    transition: all .1s linear;
+}
+
+.order:hover .order__button {
+    scale: 1.2;
+    translate: 0 -2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 9px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__burger {
+        display: flex;
+    }
+    .info__img {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        opacity: .7;
+    }
+    .info__content--wrapper {
+        margin-top: -30rem;
+    }
+    .header__contact {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 9px;
+    }
+    .features__item {
+        width: 70%;
+        height: 40rem;
+    }
+    .features__item--info {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+    .header {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+    .header__burger.active .header__burger--menu {
+        width: 70vw;
+    }
+    .header__switch--item {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
