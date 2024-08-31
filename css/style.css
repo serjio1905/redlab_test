@@ -426,6 +426,9 @@ p {
     .header__burger.active .header__burger--menu {
         width: 60vw;
     }
+    .info__content--wrapper {
+        margin-top: -10rem;
+    }
 }
 
 @media only screen and (max-width: 375px) {
