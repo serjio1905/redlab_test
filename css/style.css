@@ -162,7 +162,6 @@ p {
     flex-direction: column;
     justify-content: center;
     transition: width .3s;
-    box-shadow: -.2rem 0 .2rem -.1rem lightgray;
     z-index: 5;
 }
 
@@ -177,15 +176,7 @@ p {
     line-height: 1.9rem;
     margin: 5rem 0;
     cursor: pointer;
-}
-
-.header__burger--menu-phone {
-    color: #404040;
-    margin-top: 20rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    overflow: hidden;
-    height: 2.5rem;
+    text-wrap: nowrap;
 }
 
 .header__burger.active .header__burger--menu {

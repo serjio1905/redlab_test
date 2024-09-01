@@ -1,10 +1,10 @@
 const order = document.querySelector('.order--wrapper');
 const orderButton = document.querySelector('.order__button');
-let orderRect = order.getBoundingClientRect();
 const menuButton = document.querySelector('.header__burger');
 const menu = document.querySelector('.header__burger--menu');
 const menuSwitchButtons = document.querySelectorAll('.header__switch--item');
 const features = document.querySelectorAll('.features__item');
+let orderRect = order.getBoundingClientRect();
 
 function onSwitch(index) {
     for (let i = 0; i < menuSwitchButtons.length; i++) {
